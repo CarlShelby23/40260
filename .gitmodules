@@ -4,3 +4,6 @@
 [submodule "Poema"]
 	path = Poema
 	url = https://github.com/CarlShelby23/Poema.git
+[submodule "MUSICPEDIA"]
+	path = MUSICPEDIA
+	url = https://github.com/CarlShelby23/MUSICPEDIA.git
