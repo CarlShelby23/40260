@@ -1,38 +1,40 @@
-<?xml version="1.0"?>
+<?xml version="1.0" ?>
 <!DOCTYPE alumnos [
-    <!ELEMENT alumnos (alumno*)>
-    <!ELEMENT alumno (nombre, apellido, nacimiento, curso)>
-    <!ELEMENT nombre (#PCDATA)>
-    <!ELEMENT apellido (#PCDATA)>
-    <!ELEMENT nacimiento (#PCDATA)>
-    <!ELEMENT curso (#PCDATA)>
+	<!ELEMENT alumnos (alumno*)>
+	<!ELEMENT alumno (nombre, apellido, nacimiento, curso)>
+	<!ELEMENT nombre (#PCDATA)>
+	<!ELEMENT apellido (#PCDATA)>
+	<!ELEMENT nacimiento (#PCDATA)>
+	<!ELEMENT curso (#PCDATA)>
+
+	<!ATTLIST alumno
+	id ID #REQUIRED
+	edad CDATA #IMPLIED
+	becado (si|no) "no">
     
-    <!ATTLIST alumno
-    id ID #REQUIRED
-    edad CDATA #IMPLIED
-    becado (si|no) "no">
 ]>
 
+
 <alumnos>
-    <alumno id="u01" edad="19" becado="si">
-        <nombre> Eren </nombre>
-        <apellido> Jeager</apellido>
-        <nacimiento> 30/Marzo/835 </nacimiento>
-        <curso> Administración de Servidores </curso>
-    </alumno>
+<alumno id="a1" edad="19" becado="si">
 
-    <alumno id="u02" edad="15" becado="si">
-        <nombre> Mikasa </nombre>
-        <apellido> Ackerman </apellido>
-        <nacimiento> 10/Febrero/835 </nacimiento>
-        <curso> BD Post-Relacional </curso>
-    </alumno>
+	<nombre>Eren</nombre>
+	<apellido>Jaeger</apellido>
+	<nacimiento>30/marzo/835</nacimiento>
+	<curso>4to</curso>
+</alumno>
 
-    <alumno id="u03" edad="20" becado="no">
-        <nombre> Jeshua </nombre>
-        <apellido> May </apellido>
-        <nacimiento> 30/Octubre/2005 </nacimiento>
-        <curso> Literacidad Digital </curso>
-    </alumno>
+<alumno id="a2" edad="15" becado="si">
+	<nombre>Mikasa</nombre>
+	<apellido>Ackerman</apellido>
+	<nacimiento>10/Febrero/835</nacimiento>
+	<curso>4to</curso>
+</alumno>
 
+<alumno id="a3" edad="15" becado="si">
+	<nombre>Jechua</nombre>
+	<apellido>May</apellido>
+	<nacimiento>10/Noviembre/835</nacimiento>
+	<curso>4to</curso>
+</alumno>
 </alumnos>
