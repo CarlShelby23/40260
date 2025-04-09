@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
@@ -8,35 +9,54 @@
     <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
     <script src='main.js'></script>
 </head>
+
 <body>
 
+    <style>
+        table {
+            width: 50%;
+            border-collapse: collapse;
+        }
+
+        th,
+        td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #4046c4;
+        }
+    </style>
     <button onclick="loadXMLDoc()">Ejecutar funcion</button>
     <table id="demo"></table>
 
     <script>
         function loadXMLDoc() {
             const xhttp = new XMLHttpRequest();
-            xhttp.onload = function() {
+            xhttp.onload = function () {
                 const xmlDoc = xhttp.responseXML;
                 const cd = xmlDoc.getElementsByTagName("alumno");
                 myFunction(cd);
             }
             xhttp.open("GET", "alumnos.xml");
             xhttp.send();
-            }
+        }
 
         function myFunction(cd) {
-            let table="<tr><th>Nombre</th><th>Nacimiento</th></tr>";
+            let table = "<tr><th>Nombre</th><th>Nacimiento</th></tr>";
             for (let i = 0; i < cd.length; i++) {
                 table += "<tr><td>" +
-                cd[i].getElementsByTagName("nombre")[0].childNodes[0].nodeValue +
-                "</td><td>" +
-                cd[i].getElementsByTagName("nacimiento")[0].childNodes[0].nodeValue +
-                "</td></tr>";
+                    cd[i].getElementsByTagName("nombre")[0].childNodes[0].nodeValue +
+                    "</td><td>" +
+                    cd[i].getElementsByTagName("nacimiento")[0].childNodes[0].nodeValue +
+                    "</td></tr>";
             }
             document.getElementById("demo").innerHTML = table;
-            }
+        }
     </script>
 
 </body>
+
 </html>
