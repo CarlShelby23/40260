@@ -1,5 +1,5 @@
-<alumnos xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
- xsi:noNamespaceSchemaLocation="alumnos.xsd">
+<?xml version="1.0" encoding="UTF-8"?>
+<alumnos>
     <alumno>
         <nombre>Ere Jaeger</nombre>
         <nacimiento>0835-03-25</nacimiento>

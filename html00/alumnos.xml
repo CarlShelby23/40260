@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<alumnos>
+    <alumno>
+        <nombre>Estefania Gutierrez</nombre>
+        <nacimiento>2005-03-26</nacimiento>
+    </alumno>
+    <alumno>
+        <nombre>Luis Orozco</nombre>
+        <nacimiento>2006-05-03</nacimiento>
+    </alumno>
+    <alumno>
+        <nombre>Ricarda López</nombre>
+        <nacimiento>1998-11-01</nacimiento>
+    </alumno>
+    <alumno>
+        <nombre>Maurino Flores</nombre>
+        <nacimiento>1905-04-03</nacimiento>
+    </alumno>
+    <alumno>
+        <nombre>Liliana Castro</nombre>
+        <nacimiento>1999-10-23</nacimiento>
+    </alumno>
+    <alumno>
+        <nombre>Lorenzo Martinez</nombre>
+        <nacimiento>2013-04-25</nacimiento>
+    </alumno>
+    <alumno>
+        <nombre>Ruben Acosta</nombre>
+        <nacimiento>2013-07-15</nacimiento>
+    </alumno>
+    <alumno>
+        <nombre>Felipo Manzanilla</nombre>
+        <nacimiento>2001-09-25</nacimiento>
+    </alumno>
+    <alumno>
+        <nombre>Joaly Mendez</nombre>
+        <nacimiento>1785-08-30</nacimiento>
+    </alumno>
+    <alumno>
+        <nombre>Samuel Rivera</nombre>
+        <nacimiento>1899-01-24</nacimiento>
+    </alumno>
+    <alumno>
+        <nombre>Antonio Burgos</nombre>
+        <nacimiento>2006-07-18</nacimiento>
+    </alumno>
+</alumnos>
