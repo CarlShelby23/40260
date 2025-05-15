@@ -1,0 +1,81 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f8f9fa;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+}
+
+h1 {
+    text-align: center;
+    color: #2729b0;
+    margin-bottom: 30px;
+}
+
+form {
+    max-width: 400px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 30px;
+    background: white;
+    box-shadow: 0 10px 25px rgba(84, 86, 222, 0.2);
+    border-radius: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    color: #555;
+    font-weight: 600;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 12px 15px;
+    margin-bottom: 20px;
+    border: 2px solid #e0e0e0;
+    border-radius: 8px;
+    font-size: 16px;
+    transition: all 0.3s;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+    border-color: #2729b0;
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(84, 86, 222, 0.2);
+}
+
+input[type="submit"] {
+    width: 100%;
+    padding: 12px;
+    background-color: #2729b0;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+input[type="submit"]:hover {
+    background-color: #2729b0;
+}
+
+/* Estilos para validación */
+input:invalid {
+    border-color: #999999;
+}
+
+input:valid {
+    border-color: #4caf50;
+}
