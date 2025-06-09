@@ -7,3 +7,6 @@
 [submodule "MUSICPEDIA"]
 	path = MUSICPEDIA
 	url = https://github.com/CarlShelby23/MUSICPEDIA.git
+[submodule "ordinario-ftw"]
+	path = ordinario-ftw
+	url = https://github.com/CarlShelby23/ordinario-ftw.git
